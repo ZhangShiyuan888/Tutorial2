@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Maven_Tutorial" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="guava" target="1.8" />
+      <module name="guava-bom" target="1.5" />
+      <module name="guava-gwt" target="1.8" />
+      <module name="guava-parent (1)" target="1.5" />
+      <module name="guava-parent (2)" target="1.5" />
+      <module name="guava-testlib" target="1.8" />
+      <module name="guava-tests" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="guava" options="-parameters -sourcepath doesnotexist -XDcompilePolicy=simple" />
+      <module name="guava-gwt" options="-parameters -sourcepath doesnotexist -XDcompilePolicy=simple" />
+      <module name="guava-testlib" options="-parameters -sourcepath doesnotexist -XDcompilePolicy=simple" />
+      <module name="guava-tests" options="-parameters -sourcepath doesnotexist -XDcompilePolicy=simple" />
+    </option>
+  </component>
+</project>
